@@ -24,24 +24,24 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hre-VT-WaZ">
                                                 <rect key="frame" x="52" y="464" width="216" height="27"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-dP-hkg">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-dP-hkg">
                                                         <rect key="frame" x="0.0" y="0.0" width="110" height="27"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <state key="normal" title="Forgot User Name?">
                                                             <color key="titleColor" red="0.93905609609999996" green="0.96054765180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="userName" destination="BYZ-38-t0r" eventType="touchUpInside" id="bao-XU-P2Z"/>
+                                                            <action selector="doneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jsd-YQ-6Am"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yn-3a-aPb">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yn-3a-aPb">
                                                         <rect key="frame" x="115" y="0.0" width="101" height="27"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <state key="normal" title="Forgot Password?">
                                                             <color key="titleColor" red="0.93905609609999996" green="0.96054765180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="userPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iFI-0u-cHH"/>
+                                                            <action selector="doneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L5x-dW-gRb"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -66,7 +66,7 @@
                                                             <color key="titleColor" red="0.93905609609999996" green="0.96054765180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="logIn" destination="BYZ-38-t0r" eventType="touchUpInside" id="KbF-hq-U1v"/>
+                                                            <action selector="doneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9VV-FM-bGF"/>
                                                             <segue destination="fma-Jv-VNd" kind="presentation" modalPresentationStyle="fullScreen" id="9db-r5-vnm"/>
                                                         </connections>
                                                     </button>

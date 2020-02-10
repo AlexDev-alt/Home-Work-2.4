@@ -33,23 +33,19 @@ class ViewController: UIViewController {
       }
     
     // MARK: - IB Actions
-    @IBAction func logIn() {
-//        if loginTextField.text != "Alex", passwordTextField.text != "qwerty" {
-//            showAllert(with: "🤗", and: "Didn't guess")
-//        }
-       
-        guard loginTextField.text == "Alex", passwordTextField.text == "qwerty" else {
-            return showAllert(with: "🤗", and: "Didn't guess")
+    
+    
+ 
+    @IBAction func doneButton(_ sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            guard loginTextField.text == "Alex", passwordTextField.text == "qwerty" else {
+                return showAllert(with: "🤗", and: "Didn't guess")}
+        case 1: showAllert(with: "WooOopsS😱", and: "Youre user name Alex 😎")
+        case 2: showAllert(with: "WooOopsS😱", and: "Youre user name Alex 😎")
+        default:
+            break
         }
-        
-    }
-    
-    @IBAction func userName() {
-        showAllert(with: "WooOopsS😱", and: "Youre user name Alex 😎")
-    }
-    
-    @IBAction func userPassword(_ sender: Any) {
-        showAllert(with: "Unbelievable🤯", and: "Youre password qwerty 🧠")
     }
     
     @IBAction func logout( segue: UIStoryboardSegue){
