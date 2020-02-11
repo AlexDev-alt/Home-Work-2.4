@@ -33,9 +33,6 @@ class ViewController: UIViewController {
       }
     
     // MARK: - IB Actions
-    
-    
- 
     @IBAction func doneButton(_ sender: UIButton) {
         switch sender.tag {
         case 0:
@@ -91,9 +88,7 @@ class ViewController: UIViewController {
     @objc func kbwWillHide(_ notification: Notification) {
         scrollView.contentOffset = CGPoint.zero
     }
-    
-    
-    
+  
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
